@@ -1,10 +1,10 @@
 package jpabook.jpashop.domain;
 
-import jakarta.persistence.*;
+import javax.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
-import static jakarta.persistence.FetchType.*;
+import static javax.persistence.FetchType.*;
 
 @Entity
 @Getter@Setter
