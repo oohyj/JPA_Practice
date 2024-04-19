@@ -8,13 +8,11 @@ import jpabook.jpashop.repository.OrderSearch;
 import jpabook.jpashop.repository.SimpleOrderQueryDto;
 import lombok.Data;
 import lombok.RequiredArgsConstructor;
-import org.springframework.data.repository.cdi.Eager;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.time.LocalDateTime;
 import java.util.List;
-import java.util.Locale;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -48,6 +46,9 @@ public class OrderSimpleApiController {
 
         return collect;
     }
+
+
+
 
     @Data
     static class SimpleOrderDto{
